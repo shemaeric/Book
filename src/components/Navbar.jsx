@@ -6,6 +6,7 @@ import styled from 'styled-components';
 
 class Navbar extends Component {
   render() {
+    console.log(localStorage.token)
     return <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5"> 
       <Link to="/">
         <img src={logo} alt="store" className="nav-logo"/>
@@ -16,13 +17,31 @@ class Navbar extends Component {
         </li>
       </ul>
       <Link to="/cart" className="ml-auto">
-        <ButtonContainer>
-          <span>
+        { localStorage.token !== undefined ?
+        (<ButtonContainer>
           <i className="fas fa-cart-plus"/>
-          </span>
-          my cart 
-        </ButtonContainer>
-      </Link>  
+          Cart 
+        </ButtonContainer>) : null
+        }
+      </Link> 
+
+      <Link to="/login" className="ml-5">
+        { localStorage.token === undefined ?
+        (<ButtonContainer>
+          Login 
+        </ButtonContainer>) : null
+        }
+        
+      </Link> 
+
+      <Link to="/login" className="">
+      { localStorage.token === undefined ?
+        (<ButtonContainer>
+          Sign Up 
+        </ButtonContainer>) : null
+        }
+      </Link> 
+
     </NavWrapper>
   }
 }

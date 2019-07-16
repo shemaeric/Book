@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Title from "../Title";
+import Title from "./Title";
 import CartColumns from "./CartColumns";
 import EmptyCart from "./EmptyCart";
-import { BookConsumer } from "../../context";
-import Navbar from "../Navbar";
+import { BookConsumer } from "../context";
+import Navbar from "./Navbar";
 import CartList from "./CartList";
 import CartTotals from "./CartTotals";
 

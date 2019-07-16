@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Cart from "./components/Cart/";
+import Cart from "./components/Cart";
 import Default from "./components/Default";
 import BookList from "./components/BookList";
 import BookDetails from "./components/BookDetails";

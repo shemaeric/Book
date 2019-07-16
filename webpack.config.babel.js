@@ -34,10 +34,10 @@ const config = {
         exclude: path.join(__dirname, 'node_modules'),
       },
       {
-        test: [/\.png$/, /\.svg/, /\.jpe?g$/, /\.gif$/],
+        test: /\.(png|jpg|jpeg|gif)$/,
         loader: 'url-loader',
         options: {
-          output: path.join(__dirname, 'dist', 'assets'),
+          output: path.join(__dirname, 'public', 'img'),
           name: '[name].[ext]',
           limit: 100000,
         },
@@ -59,15 +59,11 @@ const config = {
   ],
   // Webpack dev server configuration
   devServer: {
-    port: 8000,
+    port: 5000,
     hot: true,
+    historyApiFallback: true,
     compress: true,
-    allowedHosts: ['.ngrok.io'],
-    contentBase: path.join(__dirname, 'dist'),
-    index: path.join(__dirname, 'dist'),
-    historyApiFallback: {
-      disableDotRule: true,
-    },
+    contentBase: path.join(__dirname, 'public'),
   },
 };
 

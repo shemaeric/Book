@@ -2,10 +2,10 @@
   "name": "book",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=development webpack-dev-server --https --open",
+    "start": "NODE_ENV=development webpack-dev-server --open",
     "build": "NODE_ENV=production webpack --mode production"
   },
   "repository": {
@@ -55,6 +55,7 @@
     "react-html-parser": "^2.0.2",
     "react-icons": "^3.7.0",
     "react-js-pagination": "^3.0.2",
+    "react-paypal-express-checkout": "^1.0.5",
     "react-redux": "^7.0.3",
     "react-router-dom": "^5.0.1",
     "reactstrap": "^8.0.0",

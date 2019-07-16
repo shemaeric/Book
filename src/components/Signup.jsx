@@ -38,37 +38,59 @@ onSubmit (e) {
 }
   render() {
     return (
-      <div className="login-container">
-        <form onSubmit = {this.onSubmit}>
-          <div className="login-text">
-            <button className="login-btn tex-capitalize">Sign Up</button>
-            <Link to="login">
-              <button className="sign-btn text capitalize">Log In</button>
-            </Link>
-            <div className="box-input">
-              <label>Username</label>
-              <div className="input-row">
-                <input name="username" placeholder="Username" required onChange={this.onChange} value={this.state.username}/>
-              </div>
-            </div>
-            <div className="box-input">
-              <label>Email</label>
-              <div className="input-row">
-                <input name="email" placeholder="Email" required onChange={this.onChange} value={this.state.email}/>
-              </div>
-            </div>
-            <div className="box-input">
-              <label>Password</label>
-              <div className="input-row">
-                <input name="password" placeholder="Password" required onChange={this.onChange} value={this.state.password}/>
-              </div>
-            </div>
-            <div class="submit-sign">
-            <button className="submit-btn tex-capitalize">Sign up</button>
-            </div>
+
+      <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <div class="fadeIn first">
+            <img src="https://image.flaticon.com/icons/svg/74/74472.svg" id="icon" alt="User Icon" />
           </div>
-        </form>
+          <form onSubmit = {this.onSubmit}>
+            <div>
+              <input type="text" name="username" placeholder="Username" required onChange={this.onChange} value={this.state.username}/>
+              <input type="text" name="email" placeholder="Email" required onChange={this.onChange} value={this.state.email}/>
+              <input type="text" name="password" placeholder="Password" required onChange={this.onChange} value={this.state.password}/>
+            </div>
+            <button type="submit" className="fadeIn fourth">Sign Up</button>
+          </form>
+
+          <div id="formFooter">
+            <Link to="/login"> Login In</Link>
+          </div>
+
+        </div>
       </div>
+
+      // <div className="login-container">
+      //   <form onSubmit = {this.onSubmit}>
+      //     <div className="login-text">
+      //       <button className="login-btn tex-capitalize">Sign Up</button>
+      //       <Link to="login">
+      //         <button className="sign-btn text capitalize">Log In</button>
+      //       </Link>
+      //       <div className="box-input">
+      //         <label>Username</label>
+      //         <div className="input-row">
+      //           <input name="username" placeholder="Username" required onChange={this.onChange} value={this.state.username}/>
+      //         </div>
+      //       </div>
+      //       <div className="box-input">
+      //         <label>Email</label>
+      //         <div className="input-row">
+      //           <input name="email" placeholder="Email" required onChange={this.onChange} value={this.state.email}/>
+      //         </div>
+      //       </div>
+      //       <div className="box-input">
+      //         <label>Password</label>
+      //         <div className="input-row">
+      //           <input name="password" placeholder="Password" required onChange={this.onChange} value={this.state.password}/>
+      //         </div>
+      //       </div>
+      //       <div class="submit-sign">
+      //       <button className="submit-btn tex-capitalize">Sign up</button>
+      //       </div>
+      //     </div>
+      //   </form>
+      // </div>
     );
   }
 }
