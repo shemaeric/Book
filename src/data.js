@@ -3,7 +3,7 @@ export const storeProducts = [
   {
     id: 1,
     title: "The Perfect way to pass",
-    img: "img/book1.jpeg",
+    img: "https://images-na.ssl-images-amazon.com/images/I/51GDV1RGYXL._SX258_BO1,204,203,200_.jpg",
     price: 10,
     author: "clinton",
     info:
@@ -15,7 +15,7 @@ export const storeProducts = [
   {
     id: 2,
     title: "Tech Time",
-    img: "img/book2.jpg",
+    img: "https://images-na.ssl-images-amazon.com/images/I/51GDV1RGYXL._SX258_BO1,204,203,200_.jpg",
     price: 16,
     author: "shema",
     info:
@@ -27,7 +27,7 @@ export const storeProducts = [
   {
     id: 3,
     title: "Black Clocodile",
-    img: "img/book3.jpeg",
+    img: "https://images-na.ssl-images-amazon.com/images/I/51GDV1RGYXL._SX258_BO1,204,203,200_.jpg",
     price: 8,
     author : "Bosco",
     info:
@@ -39,7 +39,7 @@ export const storeProducts = [
   {
     id: 4,
     title: "Way of Life",
-    img: "img/book4.jpg",
+    img: "https://images-na.ssl-images-amazon.com/images/I/51GDV1RGYXL._SX258_BO1,204,203,200_.jpg",
     price: 18,
     author: "fridolin",
     info:
@@ -51,7 +51,7 @@ export const storeProducts = [
   {
     id: 5,
     title: "How to have a good life",
-    img: "img/book5.jpg",
+    img: "https://images-na.ssl-images-amazon.com/images/I/51GDV1RGYXL._SX258_BO1,204,203,200_.jpg",
     price: 24,
     author: "Aaron",
     info:
