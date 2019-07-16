@@ -63,7 +63,7 @@ export const storeProducts = [
   {
     id: 6,
     title: "Vintage Cars",
-    img: "img/book6.jpg",
+    img: "https://images-na.ssl-images-amazon.com/images/I/51z1VK6Qf0L._SX258_BO1,204,203,200_.jpg",
     price: 17,
     author: "vicent",
     info:
@@ -75,7 +75,7 @@ export const storeProducts = [
   {
     id: 7,
     title: "Inmates Life",
-    img: "img/book7.jpg",
+    img: "https://images-na.ssl-images-amazon.com/images/I/51z1VK6Qf0L._SX258_BO1,204,203,200_.jpg",
     price: 30,
     author: "Hadad",
     info:
@@ -87,7 +87,7 @@ export const storeProducts = [
   {
     id: 8,
     title: "Artificial Interigence",
-    img: "img/book8.jpg",
+    img: "https://images-na.ssl-images-amazon.com/images/I/51z1VK6Qf0L._SX258_BO1,204,203,200_.jpg",
     price: 2,
     author: "Karl",
     info:
@@ -101,7 +101,7 @@ export const storeProducts = [
 export const detailProduct = {
   id: 1,
   title: "How to raise a Good Question",
-  img: "img/book1.jpeg",
+  img: "https://images-na.ssl-images-amazon.com/images/I/51z1VK6Qf0L._SX258_BO1,204,203,200_.jpg",
   price: 10,
   author: "Karara",
   info:
